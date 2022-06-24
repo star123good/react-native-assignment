@@ -8,5 +8,15 @@ React Native for Windows Assignment
 
 # Run
 
+Without Using Visual Studio
+
     npx react-native run-windows
-    
+
+Using Visual Studio
+
+    npx react-native autolink-windows
+
+With VS Code
+
+    .vscode/launch.json
+
