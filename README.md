@@ -22,7 +22,13 @@ With VS Code
 
     .vscode/launch.json
 
-# Typescript
+## Typescript
 
     npm install -D typescript @types/jest @types/react @types/react-native @types/react-test-renderer
+
+## Navigate
+
+    npm install @react-navigation/native
+    npm install react-native-screens react-native-safe-area-context
+    npm install @react-navigation/native-stack
 
