@@ -1,14 +1,9 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import Layout from './src/Layout';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <View>
-        <Text>Hello World</Text>
-      </View>
-    </NavigationContainer>
+    <Layout />
   );
 };
 
