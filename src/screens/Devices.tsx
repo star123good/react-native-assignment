@@ -1,16 +1,27 @@
-import React, { FC } from "react";
-import { ScrollView, Text, View } from "react-native";
+import React, { FC, useEffect, useState } from "react";
+import { ScrollView, Text, View, NativeModules } from "react-native";
 import Header from "../components/Header";
 import ItemList from "../components/ItemList";
 
 const Devices: FC<{navigation: string}> = ({navigation}) => {
-    const samples = ['Device 1', 'Device 2', 'Device 3'];
+    const [devices, setDevices] = useState([]);
+
+    const getDevices = async() => {
+        var result = await NativeModules.RNReaderModule.getDevices();
+        var splitted = result.split(/\r?\n/);
+        setDevices(splitted);
+        return splitted;
+    };
+
+    useEffect(() => {
+        getDevices();
+    }, []);
+
     return (
         <ScrollView>
             <Header title="Devices" navigation={navigation} />
             <View style={{ padding: 30 }} >
-                <Text>Devices</Text>
-                <ItemList data={samples} />
+                <ItemList data={devices} />
             </View>
         </ScrollView>
     );

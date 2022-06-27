@@ -1,14 +1,28 @@
-import React, { FC } from "react";
-import { ScrollView, Text } from "react-native";
+import React, { FC, useState, useEffect } from "react";
+import { ScrollView, View, NativeModules } from "react-native";
 import Header from "../components/Header";
+import ItemList from "../components/ItemList";
 
 const Drivers: FC<{navigation: any}> = ({navigation}) => {
+    const [devices, setDevices] = useState([]);
+
+    const getDrivers = async() => {
+        var result = await NativeModules.RNReaderModule.getDrivers();
+        var splitted = result.split(/\r?\n/);
+        setDevices(splitted);
+        return splitted;
+    };
+
+    useEffect(() => {
+        getDrivers();
+    }, []);
+
     return (
         <ScrollView>
             <Header title="Drivers" navigation={navigation} />
-            <Text style={{ padding: 30 }} >
-                Drivers
-            </Text>
+            <View style={{ padding: 30 }} >
+                <ItemList data={devices} />
+            </View>
         </ScrollView>
     );
 };
