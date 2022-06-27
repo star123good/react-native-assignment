@@ -1,11 +1,15 @@
-import React from "react";
-import { View, Text } from "react-native";
+import React, { FC } from "react";
+import { ScrollView, Text } from "react-native";
+import Header from "../components/Header";
 
-const Drivers = () => {
+const Drivers: FC<{navigation: any}> = ({navigation}) => {
     return (
-        <View>
-            <Text>Drivers</Text>
-        </View>
+        <ScrollView>
+            <Header title="Drivers" navigation={navigation} />
+            <Text style={{ padding: 30 }} >
+                Drivers
+            </Text>
+        </ScrollView>
     );
 };
 

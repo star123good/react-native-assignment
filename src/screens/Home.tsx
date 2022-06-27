@@ -1,11 +1,15 @@
-import React from "react";
-import { View, Text } from "react-native";
+import React, { FC } from "react";
+import { ScrollView, Text } from "react-native";
+import Header from "../components/Header";
 
-const Home = () => {
+const Home: FC<{navigation: any}> = ({navigation}) => {
     return (
-        <View>
-            <Text>Hello Okay?</Text>
-        </View>
+        <ScrollView>
+            <Header title="Home" navigation={navigation} />
+            <Text style={{ padding: 30 }} >
+                You can navigate to Drivers, Devices.
+            </Text>
+        </ScrollView>
     );
 };
 

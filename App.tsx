@@ -1,9 +1,9 @@
 import React from 'react';
-import Layout from './src/Layout';
+import Routes from './src/Routes';
 
 const App = () => {
   return (
-    <Layout />
+    <Routes />
   );
 };
 
