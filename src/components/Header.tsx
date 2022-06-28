@@ -26,10 +26,9 @@ const Header = (prop: HeaderProp) => {
 const style = StyleSheet.create({
     layout: {
         flexDirection: 'row',
-        padding: 10,
     },
     selected: {
-        backgroundColor: '#ff0000',
+        backgroundColor: '#CCCCCC',
     },
 })
 
