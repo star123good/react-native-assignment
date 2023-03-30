@@ -2,6 +2,9 @@
 
 using System.Collections.Generic;
 
+// Namespaces from @react-native-community/slider
+using SliderWindows;
+
 // Namespaces from react-native-screens
 using RNScreens;
 
@@ -11,6 +14,8 @@ namespace Microsoft.ReactNative.Managed
     {
         internal static void RegisterAutolinkedNativeModulePackages(IList<IReactPackageProvider> packageProviders)
         { 
+            // IReactPackageProviders from @react-native-community/slider
+            packageProviders.Add(new SliderWindows.ReactPackageProvider());
             // IReactPackageProviders from react-native-screens
             packageProviders.Add(new RNScreens.ReactPackageProvider());
         }

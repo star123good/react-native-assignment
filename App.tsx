@@ -9,7 +9,7 @@ const App = () => {
   const offThumbColor = '#00ff00';
   const [value, onValueChange] = React.useState(true);
   // return <Routes />;
-  return (<Slider min={1} max={100} values={[10]} />);
+  return (<Slider min={1} max={100} values={[20]} accessible />);
 };
 
 export default App;
