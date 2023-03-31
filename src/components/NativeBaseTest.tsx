@@ -9,6 +9,8 @@ const NativeBaseTest = () => {
           minValue={0}
           maxValue={100}
           value={20}
+          accessibilityRole="adjustable"
+          accessibilityLabel="NativeBase Slider"
         >
           <Slider.Track>
             <Slider.FilledTrack />
