@@ -17,7 +17,8 @@ const SliderTest = () => {
           now: 20,
           text: `20`,
         }}
-        focussable
+        accessibilityRole="adjustable"
+        focusable
         accessible
       />
       <NSlider

@@ -1,15 +1,11 @@
 import React from 'react';
-import {ScrollView, Text, View, Modal, Button, Switch} from 'react-native';
 import Routes from './src/Routes';
 import SliderTest from './src/components/SliderTest';
+import NativeBaseTest from './src/components/NativeBaseTest';
 
 const App = () => {
-  const onThumbColor = '#ff0000';
-  const offThumbColor = '#00ff00';
-  const [value, onValueChange] = React.useState(true);
-  // return <Routes />;
   return (
-    <SliderTest />
+    <NativeBaseTest />
   );
 };
 
