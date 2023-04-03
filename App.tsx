@@ -5,7 +5,7 @@ import NativeBaseTest from './src/components/NativeBaseTest';
 
 const App = () => {
   return (
-    <NativeBaseTest />
+    <SliderTest />
   );
 };
 

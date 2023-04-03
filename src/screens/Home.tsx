@@ -1,5 +1,5 @@
 import React, {FC, useState} from 'react';
-import {ScrollView, Text, View, Modal, Button} from 'react-native';
+import {ScrollView, Text, View, Modal, Button, Slider} from 'react-native';
 import Header from '../components/Header';
 
 const Home: FC<{navigation: any}> = ({navigation}) => {
