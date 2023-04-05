@@ -32,6 +32,7 @@ const SliderTest = () => {
   };
   return (
     <View>
+      <Text>React Native a11y Slider</Text>
       <Slider 
         min={1} 
         max={100} 
@@ -47,6 +48,7 @@ const SliderTest = () => {
         focusable
         accessible
       />
+      <Text>React Native community Slider</Text>
       <NSlider
         style={{width: 200, height: 40}}
         minimumValue={0}
@@ -55,6 +57,7 @@ const SliderTest = () => {
         maximumTrackTintColor="#000000"
         accessibilityLabel={'React Native community Slider'}
       />
+      <Text>React-Native-Slider</Text>
       <RNSlider
         style={{width: 200, height: 40}}
         minimumValue={0}
@@ -89,8 +92,9 @@ const SliderTest = () => {
         // trackStyle={styles.track}
         focusable
       />
+      <Text>React Native View with Slider Accessibility</Text>
       <View
-        style={{width: 200, height: 40}}
+        style={{width: 200, height: 40, borderColor: '#ff0000', borderWidth: 1}}
         accessibilityLabel={'React Native View'}
         accessibilityRole="adjustable"
         focusable
@@ -104,7 +108,7 @@ const SliderTest = () => {
         accessibilityHint={'20 percent'}
       />
       <View
-        style={{width: 200, height: 40}}
+        style={{width: 200, height: 40, borderColor: '#ff0000', borderWidth: 1}}
         accessibilityElementsHidden={true}
         accessibilityLabel="Accessibility label"
         accessibilityRole="adjustable"
