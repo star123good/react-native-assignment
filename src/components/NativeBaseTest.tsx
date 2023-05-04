@@ -1,14 +1,17 @@
 import React from 'react';
-import { NativeBaseProvider, Box, Slider } from "native-base";
+import { NativeBaseProvider, Box, Slider, Text } from "native-base";
 
 const NativeBaseTest = () => {
   return (
     <NativeBaseProvider>
       <Box>
+        <Text>
+          native-base Slider
+        </Text>
         <Slider
           minValue={0}
           maxValue={100}
-          value={20}
+          // value={20}
           accessibilityRole="adjustable"
           accessibilityLabel="NativeBase Slider"
         >
