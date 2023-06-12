@@ -1,20 +1,19 @@
 import React from 'react';
 import { TextInput } from 'react-native';
-import { NativeBaseProvider, View, Input } from "native-base";
+import { NativeBaseProvider, View } from "native-base";
+import { Input } from "native-base/src";
 
 const InputTest = () => {
   return (
     <NativeBaseProvider>
       <View 
-        bg={'#ff0000'} 
-        pl={'8px'} 
-        pr={'8px'} 
+        m={5}
       >
-        <TextInput />
-        <Input />
+        <TextInput style={{color: "#ef4444", backgroundColor: "#ff00ff"}} />
+        <Input color={'red.500'} backgroundColor={'amber.500'} />
       </View>
     </NativeBaseProvider>
   );
 };
 
-export default TextTest;
+export default InputTest;
