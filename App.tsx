@@ -11,7 +11,7 @@ import { TabsWrapper } from './src/components/Tabs';
 const App = () => {
   return (
     <>
-      <TabsWrapper />
+      <NativeBaseTest />
     </>
   );
 };
