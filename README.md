@@ -32,3 +32,7 @@ With VS Code
     npm install react-native-screens react-native-safe-area-context
     npm install @react-navigation/native-stack
 
+## Fix eslint errors
+
+    yarn run lint --fix
+

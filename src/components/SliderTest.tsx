@@ -1,30 +1,30 @@
 import React from 'react';
 import {View, Button, StyleSheet, Text} from 'react-native';
-import Slider from "react-native-a11y-slider";
+import Slider from 'react-native-a11y-slider';
 import {default as NSlider} from '@react-native-community/slider';
-import {default as RNSlider} from "react-native-slider";
+import {default as RNSlider} from 'react-native-slider';
 
 const SliderTest = () => {
   const handleSwipeForA11y = (event: AccessibilityActionEvent) => {
     switch (event.nativeEvent.actionName) {
-      case "increment":
+      case 'increment':
         // onA11ySwipeUp();
-        console.log("increment");
+        console.log('increment');
         break;
-      case "decrement":
+      case 'decrement':
         // onA11ySwipeDown();
-        console.log("decrement");
+        console.log('decrement');
     }
   };
-  const handleAccessibilityActions = (event) => {
+  const handleAccessibilityActions = event => {
     switch (event.nativeEvent.actionName) {
       case 'increment':
         // setCounter(counter + 1);
-        console.log("increment");
+        console.log('increment');
         break;
       case 'decrement':
         // setCounter(counter - 1);
-        console.log("decrement");
+        console.log('decrement');
         break;
       default:
         break;
@@ -33,16 +33,16 @@ const SliderTest = () => {
   return (
     <View>
       <Text>React Native a11y Slider</Text>
-      <Slider 
-        min={1} 
-        max={100} 
-        values={[30]} 
+      <Slider
+        min={1}
+        max={100}
+        values={[30]}
         accessibilityLabel={'React Native a11y Slider'}
         accessibilityValue={{
           min: 1,
           max: 100,
           now: 20,
-          text: `20`,
+          text: '20',
         }}
         accessibilityRole="adjustable"
         focusable
@@ -69,17 +69,17 @@ const SliderTest = () => {
           min: 1,
           max: 100,
           now: 20,
-          text: `20`,
+          text: '20',
         }}
       />
       <RNSlider
         accessible
         accessibilityRole="adjustable"
-        accessibilityLabel={"I am a slider"}
-        accessibilityValue={{ min: 0, max: 100, now: 20 }}
-        accessibilityActions={[{ name: "increment" }, { name: "decrement"}]}
+        accessibilityLabel={'I am a slider'}
+        accessibilityValue={{min: 0, max: 100, now: 20}}
+        accessibilityActions={[{name: 'increment'}, {name: 'decrement'}]}
         onAccessibilityAction={handleSwipeForA11y}
-        testID={`testID-newSlider`}
+        testID={'testID-newSlider'}
         // step={step}
         // minimumValue={minValue}
         // maximumValue={maxValue}
@@ -103,7 +103,7 @@ const SliderTest = () => {
           min: 1,
           max: 100,
           now: 20,
-          text: `20`,
+          text: '20',
         }}
         accessibilityHint={'20 percent'}
       />
@@ -112,10 +112,10 @@ const SliderTest = () => {
         accessibilityElementsHidden={true}
         accessibilityLabel="Accessibility label"
         accessibilityRole="adjustable"
-        accessibilityState={{ busy: false }}
-        accessibilityValue={{ text: "20 percent" }}
+        accessibilityState={{busy: false}}
+        accessibilityValue={{text: '20 percent'}}
         focusable={true}
-        importantforAccessibility='no-hide-descendants'
+        importantforAccessibility="no-hide-descendants"
         nativeId="native-id"
       />
       {/* <View

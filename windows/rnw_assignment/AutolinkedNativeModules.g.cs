@@ -5,6 +5,9 @@ using System.Collections.Generic;
 // Namespaces from @react-native-community/slider
 using SliderWindows;
 
+// Namespaces from @react-native-picker/picker
+using ReactNativePicker;
+
 // Namespaces from react-native-screens
 using RNScreens;
 
@@ -16,6 +19,8 @@ namespace Microsoft.ReactNative.Managed
         { 
             // IReactPackageProviders from @react-native-community/slider
             packageProviders.Add(new SliderWindows.ReactPackageProvider());
+            // IReactPackageProviders from @react-native-picker/picker
+            packageProviders.Add(new ReactNativePicker.ReactPackageProvider());
             // IReactPackageProviders from react-native-screens
             packageProviders.Add(new RNScreens.ReactPackageProvider());
         }

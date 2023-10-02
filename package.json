@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@react-native-community/slider": "^4.4.2",
+    "@react-native-picker/picker": "^2.5.1",
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/native-stack": "^6.6.2",
     "native-base": "^3.4.28",

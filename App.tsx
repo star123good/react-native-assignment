@@ -6,12 +6,13 @@ import TextTest from './src/components/TextTest';
 import SwitchTest from './src/components/SwitchTest';
 import InputTest from './src/components/InputTest';
 import TabViewExample from './src/components/TabViewExample';
-import { TabsWrapper } from './src/components/Tabs';
+import {TabsWrapper} from './src/components/Tabs';
+import PickerTest from './src/components/PickerTest';
 
 const App = () => {
   return (
     <>
-      <NativeBaseTest />
+      <PickerTest />
     </>
   );
 };

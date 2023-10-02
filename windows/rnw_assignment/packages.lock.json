@@ -131,6 +131,9 @@
           "Microsoft.ReactNative": "1.0.0"
         }
       },
+      "reactnativepicker": {
+        "type": "Project"
+      },
       "rnscreens": {
         "type": "Project"
       },
