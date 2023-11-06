@@ -8,11 +8,12 @@ import InputTest from './src/components/InputTest';
 import TabViewExample from './src/components/TabViewExample';
 import {TabsWrapper} from './src/components/Tabs';
 import PickerTest from './src/components/PickerTest';
+import ModalTest from './src/components/ModalTest';
 
 const App = () => {
   return (
     <>
-      <PickerTest />
+      <ModalTest />
     </>
   );
 };
